@@ -1,0 +1,4 @@
+[submodule "spleeterpp"]
+	path = SpleeterLib/deps
+	url = https://github.com/joeloftusdev/spleeterpp.git
+	

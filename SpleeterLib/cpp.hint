@@ -1,0 +1,2 @@
+#define SPLEETERLIB_API __declspec(dllexport)
+#define SPLEETERLIB_API __declspec(dllimport)
