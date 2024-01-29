@@ -49,6 +49,7 @@ Stemify is [MIT Licensed](https://github.com/joeloftusdev/stemify/blob/main/LICE
 
 ## Dependencies
 You will need:
+* This is currently just for Windows
 * CMake installed to build
 * .net6 or higher
 * Python if you wish to use the script provided at the end of your build.
