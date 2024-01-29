@@ -40,5 +40,6 @@ python copyfiles.py
 ## Made With
 * [C++](https://isocpp.org/)
 * [spleeterpp](https://github.com/joeloftusdev/spleeterpp)
+* [Spleeter](https://github.com/deezer/spleeter)
 * [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
 * [CMake](https://cmake.org/)
