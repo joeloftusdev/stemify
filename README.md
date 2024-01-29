@@ -2,7 +2,7 @@
 
 ![stemify](https://github.com/joeloftusdev/stemify/assets/152509645/921ab995-b461-443f-9ecc-2a2ecaa0b8df)
 
-Stemify is a Windows desktop application that leverages AI to split songs(.wav) into individual instrument tracks
+Stemify is a Windows desktop application that leverages AI to split songs(.wav) into individual instrument tracks.
 ## How to Build
 ```
 # Clone the Spleeterpp submodule
@@ -43,3 +43,12 @@ python copyfiles.py
 * [Spleeter](https://github.com/deezer/spleeter)
 * [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
 * [CMake](https://cmake.org/)
+
+## License 
+Stemify is [MIT Licensed](https://github.com/joeloftusdev/stemify/blob/main/LICENSE)
+
+## Dependencies
+You will need:
+* CMake installed to build
+* .net6 or higher
+* Python if you wish to use the script provided at the end of your build.
