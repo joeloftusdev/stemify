@@ -2,7 +2,7 @@
 
 ![stemify](https://github.com/joeloftusdev/stemify/assets/152509645/921ab995-b461-443f-9ecc-2a2ecaa0b8df)
 
-Stemify is a Windows desktop application that leverages AI to split songs into individual instrument tracks
+Stemify is a Windows desktop application that leverages AI to split songs(.wav) into individual instrument tracks
 ## How to Build
 ```
 # Clone the Spleeterpp submodule
