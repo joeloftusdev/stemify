@@ -19,7 +19,7 @@ cmake ..
 cmake --build .
 
 # Navigate to the Stemify directory
-cd ./Stemify
+cd ./stemify
 
 # Create a build directory and then build using CMake
 mkdir build && cd build
@@ -29,9 +29,10 @@ cmake ..
 cmake --build . -- -r
 
 # Navigate to the scripts directory
-cd ../scripts
+cd ./scripts
 
-# Copy the models and the SpleeterLib dll to the build directory using either a Python script or PowerShell script
+# Copy the models and the SpleeterLib dll to the build directory using either
+# a Python script or a PowerShell script
 # Choose either the Python script (copyfiles.py) or PowerShell script (copyresources.ps1)
 python copyfiles.py
 # powershell.exe -File copyresources.ps1
@@ -49,7 +50,7 @@ Stemify is [MIT Licensed](https://github.com/joeloftusdev/stemify/blob/main/LICE
 
 ## Dependencies
 You will need:
-* This is currently just for Windows
-* CMake installed to build
-* .net6 or higher
+* Windows 10/11
+* CMake installed
+* .NET 6 or higher
 * Python if you wish to use the script provided at the end of your build.
