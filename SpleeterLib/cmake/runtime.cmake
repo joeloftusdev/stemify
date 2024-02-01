@@ -1,9 +1,5 @@
-
-# ucm_gather_flags
-# Gathers all lists of flags for printing or manipulation
 macro(ucm_gather_flags with_linker result)
     set(${result} "")
-    # add the main flags without a config
     list(APPEND ${result} CMAKE_C_FLAGS)
     list(APPEND ${result} CMAKE_CXX_FLAGS)
     if(${with_linker})
@@ -14,7 +10,6 @@ macro(ucm_gather_flags with_linker result)
     endif()
 
     if("${CMAKE_CONFIGURATION_TYPES}" STREQUAL "" AND NOT "${CMAKE_BUILD_TYPE}" STREQUAL "")
-        # handle single config generators - like makefiles/ninja - when CMAKE_BUILD_TYPE is set
         string(TOUPPER ${CMAKE_BUILD_TYPE} config)
         list(APPEND ${result} CMAKE_C_FLAGS_${config})
         list(APPEND ${result} CMAKE_CXX_FLAGS_${config})
@@ -25,7 +20,6 @@ macro(ucm_gather_flags with_linker result)
             list(APPEND ${result} CMAKE_STATIC_LINKER_FLAGS_${config})
         endif()
     else()
-        # handle multi config generators (like msvc, xcode)
         foreach(config ${CMAKE_CONFIGURATION_TYPES})
             string(TOUPPER ${config} config)
             list(APPEND ${result} CMAKE_C_FLAGS_${config})
@@ -40,8 +34,6 @@ macro(ucm_gather_flags with_linker result)
     endif()
 endmacro()
 
-# ucm_set_runtime
-# Sets the runtime (static/dynamic) for msvc/gcc
 macro(set_runtime)
     cmake_parse_arguments(ARG "STATIC;DYNAMIC" "" "" ${ARGN})
 
@@ -55,9 +47,6 @@ macro(set_runtime)
 
     ucm_gather_flags(0 flags_configs)
 
-    # add/replace the flags
-    # note that if the user has messed with the flags directly this function might fail
-    # - for example if with MSVC and the user has removed the flags - here we just switch/replace them
     if("${ARG_STATIC}")
         foreach(flags ${flags_configs})
             if(CMAKE_CXX_COMPILER_ID MATCHES "GNU")
