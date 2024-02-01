@@ -1,12 +1,17 @@
 cmake_minimum_required(VERSION 3.15)
+
 project(SpleeterUI LANGUAGES CSharp)
 
 
 include(CSharpUtilities)
 
+
 add_subdirectory(${CMAKE_SOURCE_DIR}/SpleeterLib SpleeterLib)
 
+
 set(SOURCE_DIR ${CMAKE_SOURCE_DIR})
+
+
 
 #add_custom_target(RunAtStartOfBuild ALL
 #    COMMAND ${CMAKE_COMMAND} -E env powershell.exe -File ${SOURCE_DIR}/SpleeterUI/build.ps1

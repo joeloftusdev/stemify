@@ -15,6 +15,7 @@ Name "Stemify"
 !insertmacro MUI_PAGE_INSTFILES
 !insertmacro MUI_PAGE_FINISH
 
+
 !insertmacro MUI_LANGUAGE "English"
 
 Section "CheckDotNet6"

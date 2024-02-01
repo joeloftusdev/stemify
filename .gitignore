@@ -1,2 +1,7 @@
 /SpleeterLib/deps/
 /build/
+/.vs/
+/out/
+/SpleeterUI/.vs/
+/SpleeterUI/bin/
+/SpleeterUI/obj/
