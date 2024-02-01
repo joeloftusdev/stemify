@@ -12,24 +12,6 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/SpleeterLib SpleeterLib)
 set(SOURCE_DIR ${CMAKE_SOURCE_DIR})
 
 
-
-#add_custom_target(RunAtStartOfBuild ALL
-#    COMMAND ${CMAKE_COMMAND} -E env powershell.exe -File ${SOURCE_DIR}/SpleeterUI/build.ps1
-#    WORKING_DIRECTORY ${SOURCE_DIR}/SpleeterUI
-#    COMMENT "Running script.."
-   
-#)
-
-#execute_process(
-#    COMMAND ${CMAKE_COMMAND} -E env powershell.exe -File ${SOURCE_DIR}/SpleeterUI/copyresources.ps1
-#    #WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-#    OUTPUT_VARIABLE FOO
-#    RESULT_VARIABLE FOOR
-#    ERROR_VARIABLE FOO_ER
-#)
-
-#SET(CMAKE_VS_NUGET_PACKAGE_RESTORE ON)
-
 add_executable(SpleeterUI
     ${SOURCE_DIR}/SpleeterUI/App.xaml.cs
     ${SOURCE_DIR}/SpleeterUI/AssemblyInfo.cs
