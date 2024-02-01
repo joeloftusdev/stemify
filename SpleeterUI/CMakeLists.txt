@@ -22,16 +22,6 @@ add_executable(SpleeterUI
     
 )
 
-csharp_set_designer_cs_properties(
-    ${SOURCE_DIR}/SpleeterUI/AssemblyInfo.cs)
-
-
-csharp_set_xaml_cs_properties(
-    ${SOURCE_DIR}/SpleeterUI/App.xaml
-    ${SOURCE_DIR}/SpleeterUI/App.xaml.cs
-    ${SOURCE_DIR}/SpleeterUI/MainWindow.xaml
-    ${SOURCE_DIR}/SpleeterUI/MainWindow.xaml.cs)
-
 set(APP_XAML_PATH "${SOURCE_DIR}/SpleeterUI/App.xaml")
 set_property(SOURCE ${APP_XAML_PATH} PROPERTY VS_XAML_TYPE "ApplicationDefinition")
 
