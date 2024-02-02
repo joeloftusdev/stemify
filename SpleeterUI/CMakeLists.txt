@@ -24,6 +24,7 @@ add_executable(SpleeterUI
 
 set(APP_XAML_PATH "${SOURCE_DIR}/SpleeterUI/App.xaml")
 set_property(SOURCE ${APP_XAML_PATH} PROPERTY VS_XAML_TYPE "ApplicationDefinition")
+SET_PROPERTY(TARGET ${PROJECT_NAME} PROPERTY VS_PACKAGE_REFERENCES "Serilog_2.9.0;Serilog.Sinks.Console_3.1.1")
 
 
 target_compile_options(SpleeterUI PRIVATE "/langversion:latest")
