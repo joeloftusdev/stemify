@@ -27,7 +27,7 @@ mkdir build && cd build
 cmake ..
 
 # Build Stemify
-cmake --build . -- -r
+cmake --build . 
 
 # Navigate to the scripts directory
 cd ./scripts
