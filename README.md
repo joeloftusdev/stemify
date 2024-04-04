@@ -3,7 +3,7 @@
 ![stemify](https://github.com/joeloftusdev/stemify/assets/152509645/921ab995-b461-443f-9ecc-2a2ecaa0b8df)
 
 Stemify is a Windows desktop application that leverages [Spleeter](https://github.com/deezer/spleeter) via the 
- [spleeterpp](https://github.com/joeloftusdev/spleeterpp) library  to split songs(.wav) into individual instrument tracks.
+ [spleeterpp](https://github.com/joeloftusdev/spleeterpp) library to split songs(.wav) into individual instrument tracks.
 ## How to Build
 ```
 # Clone the Spleeterpp submodule
